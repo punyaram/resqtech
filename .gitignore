@@ -1,0 +1,28 @@
+# Dependencies
+# This folder is huge and can be recreated by running 'npm install'.
+/node_modules
+
+# Build output
+# This is the compiled version of your app, generated for production.
+/dist
+/build
+
+# Environment Variables
+# IMPORTANT: This file contains your secret Supabase keys.
+.env
+.env.*
+
+# Supabase local development
+# This folder is managed by the Supabase CLI and can contain local secrets.
+/supabase
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
