@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# ResqTech - INCOIS Ocean Hazard Reporter
 
-## Project info
+ResqTech is a modern web application designed for reporting ocean-related hazards to the Indian National Centre for Ocean Information Services (INCOIS). It allows users to sign up, log in, and submit hazard reports, which are crucial for protecting coastal areas.
 
-**URL**: https://lovable.dev/projects/229b8a3a-5dd7-4084-b207-6761fb6a83a5
+The application is built to be resilient, with features like offline support, ensuring that reports can be queued and synced automatically when a connection is available.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- User Authentication: Secure sign-up and sign-in functionality handled by Supabase.
+- Hazard Reporting: A dedicated form for users to report ocean hazards.
+- Interactive Map View: A central map page to visualize data.
+- Offline Support: Reports can be created offline and are automatically synced to the server when the user is back online.
+- Modern UI: Built with a responsive and clean user interface using shadcn/ui and Tailwind CSS.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/229b8a3a-5dd7-4084-b207-6761fb6a83a5) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+- Frontend: React, TypeScript, Vite
+- Backend & Database: Supabase (Backend-as-a-Service)
+- Styling: Tailwind CSS, shadcn/ui
+- State Management: Zustand (authStore)
+- Routing: React Router DOM
+- Data Fetching: TanStack Query
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+You need to have Node.js (version 18 or higher) and npm installed on your computer.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Installation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1. Clone the repository:
+   `git clone https://github.com/punyaram/resqtech.git`
 
-**Edit a file directly in GitHub**
+2. Navigate to the project directory:
+   `cd resqtech`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Install the dependencies:
+   `npm install`
 
-**Use GitHub Codespaces**
+4. Set up your environment variables:
+   - Create a new file in the root of the project named `.env`.
+   - You will need to get your own Supabase Project URL and Anon Key from your Supabase project dashboard.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+   `VITE_SUPABASE_URL="YOUR_SUPABASE_PROJECT_URL"`
+   `VITE_SUPABASE_PUBLISHABLE_KEY="YOUR_SUPABASE_ANON_KEY"`
 
-## What technologies are used for this project?
+### Running the Application
 
-This project is built with:
+Once the installation is complete, you can run the application in development mode:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+`npm run dev`
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/229b8a3a-5dd7-4084-b207-6761fb6a83a5) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This will start the development server. Open your browser and navigate to `http://localhost:5173` (or the URL shown in your terminal) to see the application running.
